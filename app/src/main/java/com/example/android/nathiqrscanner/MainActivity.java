@@ -33,10 +33,10 @@ public class MainActivity extends AppCompatActivity implements ZXingScannerView.
 
     public void QrScanner(View view) {
 
-        mScannerView = new ZXingScannerView(this);   // Programmatically initialize the scanner view
+        mScannerView = new ZXingScannerView(this);   //initialize the scanner view
         setContentView(mScannerView);
 
-        mScannerView.setResultHandler(this); // Register ourselves as a handler for scan results.
+        mScannerView.setResultHandler(this); // Register a handler for scan results.
         mScannerView.startCamera();         // Start camera
 
     }
